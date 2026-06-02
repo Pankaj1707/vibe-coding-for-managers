@@ -21,6 +21,7 @@ export default function AboutPage() {
             <h1 className="font-heading text-6xl font-semibold uppercase leading-[0.88] md:text-8xl">
               I am learning this in public.
             </h1>
+            <p className="mt-4 text-sm text-black/60">Founder: a manager learning AI-assisted building in real time and documenting practical, testable lessons.</p>
           </div>
           <p className="max-w-2xl text-xl leading-9 text-black/72 md:text-2xl md:leading-10">
             I am a manager, not a lifelong software engineer. I know the frustration of seeing a product clearly and not having the technical path to make it real. AI changed that enough to deserve a serious attempt.
@@ -76,7 +77,7 @@ export default function AboutPage() {
 
       <CtaBand
         title="Follow the build."
-        body="Get the notes as this turns from public learning project into a practical course for managers."
+        body="Get practical build breakdowns, checklists, and early access to the course for managers."
         source="about-final"
       />
     </>

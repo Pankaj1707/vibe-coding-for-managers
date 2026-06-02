@@ -18,11 +18,12 @@ export default function HomePage() {
           </div>
           <div className="mt-8 grid gap-10 lg:grid-cols-[0.82fr_1.18fr] lg:items-end">
             <p className="max-w-xl text-xl leading-8 text-black/72 md:text-2xl md:leading-10">
-              AI has changed who gets to make software. This is a field guide for managers who have ideas, context, and taste, but never had an engineering background.
+              AI has changed who gets to make software. A concise field guide for managers with domain expertise who want to ship prototypes, test ideas, and lead better product decisions.
             </p>
             <div className="lg:justify-self-end">
               <SignupForm source="home-hero" />
-              <p className="mt-2 text-sm text-black/55">Early notes, build breakdowns, and first access to the course.</p>
+              <p className="mt-3 text-sm text-black/60">Founder: a manager documenting real builds and sharing practical, manager-first lessons.</p>
+              <p className="mt-2 text-sm text-black/55">Weekly field notes, practical checklists, and first access to the course.</p>
             </div>
           </div>
         </div>
@@ -66,7 +67,7 @@ export default function HomePage() {
         id="learn"
         eyebrow="What you'll learn"
         title="A course for builders with manager brains."
-        intro="Placeholder curriculum for the first version. The final course will be shaped by real builds, not abstract theory."
+        intro="A practical, hands-on curriculum focused on making usable prototypes managers can test quickly."
       >
         <div className="grid gap-10 md:grid-cols-2">
           {learnCards.map((card) => (
@@ -93,7 +94,7 @@ export default function HomePage() {
       <CtaBand
         id="join"
         title="Get the early lessons."
-        body="Join the list for field notes, build breakdowns, and first access when the course opens."
+        body="Get practical build breakdowns, checklists, and early access to the course."
         source="home-final"
       />
     </>

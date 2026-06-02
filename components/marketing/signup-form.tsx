@@ -34,7 +34,7 @@ export function SignupForm({ source, compact = false }: SignupFormProps) {
 
     setStatus("success");
     setEmail("");
-    setMessage(payload.message ?? "You're on the list.");
+    setMessage(payload.message ?? "Thanks — check your inbox for a welcome note with first lessons.");
   }
 
   return (
@@ -49,7 +49,7 @@ export function SignupForm({ source, compact = false }: SignupFormProps) {
           required
           value={email}
           onChange={(event) => setEmail(event.target.value)}
-          placeholder="Your email"
+          placeholder="Work email (you@company.com)"
           autoComplete="email"
           className="min-h-16 flex-1 border-b-2 border-black px-5 text-lg outline-none placeholder:text-black/45 focus:bg-muted sm:border-b-0 sm:border-r-2"
         />
@@ -58,12 +58,13 @@ export function SignupForm({ source, compact = false }: SignupFormProps) {
           disabled={status === "loading"}
           className="min-h-16 bg-black px-6 text-base font-bold uppercase text-white transition-colors hover:bg-accent disabled:cursor-wait disabled:bg-black/70 md:px-8"
         >
-          {status === "loading" ? "Joining" : "Join the list"}
+          {status === "loading" ? "Joining…" : "Get early access"}
         </button>
       </div>
       <div className="mt-3 min-h-6 text-sm font-medium" aria-live="polite">
         {message ? <p className={status === "error" ? "text-accent" : "text-black/70"}>{message}</p> : null}
       </div>
+      <p className="mt-2 text-xs text-black/55">No spam. Unsubscribe anytime.</p>
     </form>
   );
 }

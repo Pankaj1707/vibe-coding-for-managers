@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     template: "%s | Vibe Coding for Managers",
   },
   description:
-    "A practical journey for managers learning to build software products with AI, without becoming software engineers.",
+    "A public learning project helping managers build software with AI — ship prototypes and test ideas without becoming engineers.",
   openGraph: {
     title: "Vibe Coding for Managers",
     description: "It's not too late to build. AI has made building accessible to managers.",
