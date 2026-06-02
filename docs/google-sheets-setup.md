@@ -66,7 +66,7 @@ Create `.env.local` in the project root for local development:
 ```bash
 GOOGLE_SHEETS_WEBHOOK_URL=https://script.google.com/macros/s/your_deployment_id/exec
 GOOGLE_SHEETS_WEBHOOK_SECRET=a_long_random_secret_value
-GOOGLE_SHEETS_TIMEOUT_MS=8000
+GOOGLE_SHEETS_TIMEOUT_MS=15000
 ```
 
 Use the same value for `GOOGLE_SHEETS_WEBHOOK_SECRET` and the Apps Script `WEBHOOK_SECRET` property.
@@ -75,7 +75,7 @@ The exact Next.js environment variables are:
 
 - `GOOGLE_SHEETS_WEBHOOK_URL`: The Apps Script Web App URL copied after deployment. Configure in `.env.local` locally and in Vercel Project Settings.
 - `GOOGLE_SHEETS_WEBHOOK_SECRET`: The shared secret. Configure the same value in `.env.local`, Vercel, and Apps Script `WEBHOOK_SECRET`.
-- `GOOGLE_SHEETS_TIMEOUT_MS`: Optional timeout for the server-to-script request. `8000` is a reasonable default.
+- `GOOGLE_SHEETS_TIMEOUT_MS`: Optional timeout for the background server-to-script request. `15000` is a reasonable default because users no longer wait for this write.
 
 The exact Apps Script project properties are:
 
@@ -126,7 +126,7 @@ Expected invalid email response:
 ```text
 GOOGLE_SHEETS_WEBHOOK_URL=https://script.google.com/macros/s/your_deployment_id/exec
 GOOGLE_SHEETS_WEBHOOK_SECRET=a_long_random_secret_value
-GOOGLE_SHEETS_TIMEOUT_MS=8000
+GOOGLE_SHEETS_TIMEOUT_MS=15000
 ```
 
 4. Add the variables to `Production`, `Preview`, and `Development` if you want all Vercel environments to write to the same Sheet.
