@@ -2,11 +2,11 @@ import Link from "next/link";
 
 export function Footer() {
   return (
-    <footer className="border-t border-line">
-      <div className="mx-auto flex max-w-7xl flex-col gap-4 px-5 py-8 text-sm text-black/70 md:flex-row md:items-center md:justify-between md:px-8">
+    <footer className="border-t border-black bg-white">
+      <div className="mx-auto flex max-w-[90rem] flex-col gap-6 px-5 py-10 text-sm text-black/65 md:flex-row md:items-end md:justify-between md:px-8">
         <div>
-          <p>Vibe Coding for Managers</p>
-          <p className="text-xs text-black/60">Built in public — see the founder story on About.</p>
+          <p className="font-heading text-3xl font-semibold uppercase leading-none text-black">Vibe Coding for Managers</p>
+          <p className="mt-2 text-xs">Built in public. For managers ready to make software.</p>
         </div>
         <div className="flex gap-5">
           <Link href="/about" className="hover:text-accent">

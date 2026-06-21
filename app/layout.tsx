@@ -1,4 +1,11 @@
 import type { Metadata } from "next";
+import "@fontsource/khand/500.css";
+import "@fontsource/khand/600.css";
+import "@fontsource/khand/700.css";
+import "@carrot-kpi/switzer-font/400.css";
+import "@carrot-kpi/switzer-font/500.css";
+import "@carrot-kpi/switzer-font/600.css";
+import "@carrot-kpi/switzer-font/700.css";
 import "./globals.css";
 import { Footer } from "@/components/site/footer";
 import { Header } from "@/components/site/header";

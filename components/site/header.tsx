@@ -9,14 +9,25 @@ const navItems: Array<{ href: Route; label: string }> = [
 
 export function Header() {
   return (
-    <header className="border-b border-line bg-background">
-      <div className="mx-auto flex max-w-7xl items-center justify-between px-5 py-5 md:px-8">
-        <Link href="/" className="font-heading text-2xl font-semibold uppercase leading-none">
-          VCFM
+    <header className="sticky top-0 z-50 border-b border-black/15 bg-white/95 backdrop-blur-sm">
+      <div className="mx-auto flex min-h-16 max-w-[90rem] items-center justify-between px-5 md:px-8">
+        <Link href="/" className="group flex items-center gap-3" aria-label="Vibe Coding for Managers home">
+          <span className="flex size-8 items-center justify-center bg-black font-heading text-xl font-semibold leading-none text-white transition-colors group-hover:bg-accent">
+            V
+          </span>
+          <span className="hidden text-xs font-semibold uppercase leading-[1.05] sm:block">
+            Vibe Coding
+            <br />
+            for Managers
+          </span>
         </Link>
-        <nav aria-label="Primary navigation" className="flex items-center gap-5 text-sm font-medium md:gap-8">
+        <nav aria-label="Primary navigation" className="flex items-center gap-5 text-xs font-semibold uppercase md:gap-8">
           {navItems.map((item) => (
-            <Link key={item.href} href={item.href} className="transition-colors hover:text-accent">
+            <Link
+              key={item.href}
+              href={item.href}
+              className={item.label === "Join" ? "bg-black px-4 py-3 text-white transition-colors hover:bg-accent" : "transition-colors hover:text-accent"}
+            >
               {item.label}
             </Link>
           ))}

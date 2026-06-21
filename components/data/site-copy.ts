@@ -1,23 +1,23 @@
 export const learnCards = [
   {
     kicker: "01",
-    title: "Think like a product owner",
-    body: "Turn a messy business problem into a small, testable product brief an AI builder can act on.",
+    title: "Scope ideas into testable builds",
+    body: "Turn a messy business problem into a narrow, useful prototype an AI tool can actually create and validate.",
   },
   {
     kicker: "02",
-    title: "Prototype the real thing",
-    body: "Build usable internal tools, calculators, workflows, and simple web apps you can demo and iterate on.",
+    title: "Build practical prototypes",
+    body: "Create internal tools, workflow helpers, dashboards, and simple web experiences that prove an idea quickly.",
   },
   {
     kicker: "03",
-    title: "Work with AI clearly",
-    body: "Give precise direction, evaluate outputs, and catch assumptions so prototypes move from idea to testable demo.",
+    title: "Lead AI-assisted work",
+    body: "Give direction, evaluate outputs, and keep a build moving with clear prompts and review habits.",
   },
   {
     kicker: "04",
-    title: "Ship with judgment",
-    body: "Know when a prototype is ready to learn from, when it needs hardening, and when to involve engineering partners.",
+    title: "Ship with manager judgment",
+    body: "Know when a prototype is ready to share, improve, or hand off to engineering for the next stage.",
   },
 ];
 
