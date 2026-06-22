@@ -9,8 +9,8 @@ const navItems: Array<{ href: Route; label: string }> = [
 
 export function Header() {
   return (
-    <header className="sticky top-0 z-50 border-b border-black/15 bg-white/95 backdrop-blur-sm">
-      <div className="mx-auto flex min-h-16 max-w-[90rem] items-center justify-between px-5 md:px-8">
+    <header className="sticky top-0 z-50 border-b border-black/10 bg-white">
+      <div className="mx-auto flex min-h-20 max-w-[90rem] items-center justify-between px-5 md:px-8">
         <Link href="/" className="group flex items-center gap-3" aria-label="Vibe Coding for Managers home">
           <span className="flex size-8 items-center justify-center bg-black font-heading text-xl font-semibold leading-none text-white transition-colors group-hover:bg-accent">
             V

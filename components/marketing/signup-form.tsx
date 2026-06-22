@@ -39,7 +39,7 @@ export function SignupForm({ source, compact = false }: SignupFormProps) {
 
   return (
     <form onSubmit={onSubmit} className={cn("w-full", compact ? "max-w-2xl" : "max-w-3xl")}>
-      <div className="flex flex-col border border-black bg-background sm:flex-row">
+      <div className="flex flex-col border border-black/15 bg-background sm:flex-row">
         <label htmlFor={`email-${source}`} className="sr-only">
           Email address
         </label>
@@ -51,12 +51,12 @@ export function SignupForm({ source, compact = false }: SignupFormProps) {
           onChange={(event) => setEmail(event.target.value)}
           placeholder="Work email (you@company.com)"
           autoComplete="email"
-          className="min-h-16 min-w-0 flex-1 border-b border-black bg-white px-5 text-base outline-none placeholder:text-black/40 focus:bg-muted sm:border-b-0 sm:border-r"
+          className="min-h-14 min-w-0 flex-1 border-b border-black/15 bg-white px-5 text-base outline-none placeholder:text-black/40 focus:bg-white sm:border-b-0 sm:border-r"
         />
         <button
           type="submit"
           disabled={status === "loading"}
-          className="min-h-16 shrink-0 bg-black px-6 text-sm font-bold uppercase text-white transition-colors hover:bg-accent disabled:cursor-wait disabled:bg-black/70 md:px-8"
+          className="min-h-14 shrink-0 bg-black px-6 text-sm font-bold uppercase text-white transition-colors hover:bg-accent disabled:cursor-wait disabled:bg-black/70 md:px-8"
         >
           {status === "loading" ? "Joining…" : "Get early access"}
         </button>
@@ -64,7 +64,7 @@ export function SignupForm({ source, compact = false }: SignupFormProps) {
       <div className="mt-3 min-h-6 text-sm font-medium" aria-live="polite">
         {message ? <p className={status === "error" ? "text-accent" : "text-black/70"}>{message}</p> : null}
       </div>
-      <p className="mt-1 text-[0.7rem] font-medium uppercase text-black/45">No spam. No hype. Just real lessons from building with AI.</p>
+      <p className="mt-1 text-[0.7rem] font-medium uppercase text-black/60">No spam. No hype. Just real lessons from building with AI.</p>
     </form>
   );
 }
