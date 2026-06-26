@@ -49,7 +49,7 @@ export function SignupForm({ source, compact = false }: SignupFormProps) {
           required
           value={email}
           onChange={(event) => setEmail(event.target.value)}
-          placeholder="Work email (you@company.com)"
+          placeholder="Email (you@example.com)"
           autoComplete="email"
           className="min-h-14 min-w-0 flex-1 border-b border-black/15 bg-white px-5 text-base outline-none placeholder:text-black/40 focus:bg-white sm:border-b-0 sm:border-r"
         />
