@@ -58,13 +58,13 @@ export function SignupForm({ source, compact = false }: SignupFormProps) {
           disabled={status === "loading"}
           className="min-h-14 shrink-0 bg-black px-6 text-sm font-bold uppercase text-white transition-colors hover:bg-accent disabled:cursor-wait disabled:bg-black/70 md:px-8"
         >
-          {status === "loading" ? "Joining…" : "Get early access"}
+          {status === "loading" ? "Sending…" : "Get the PDF"}
         </button>
       </div>
       <div className="mt-3 min-h-6 text-sm font-medium" aria-live="polite">
         {message ? <p className={status === "error" ? "text-accent" : "text-black/70"}>{message}</p> : null}
       </div>
-      <p className="mt-1 text-[0.7rem] font-medium uppercase text-black/60">No spam. No hype. Just real lessons from building with AI.</p>
+      <p className="mt-1 text-[0.7rem] font-medium uppercase text-black/60">No spam. No hype. Just the guide and a few thoughtful updates.</p>
     </form>
   );
 }

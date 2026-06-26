@@ -12,6 +12,9 @@ export function Footer() {
           <Link href="/about" className="transition-colors hover:text-black">
             About
           </Link>
+          <Link href="/privacy" className="transition-colors hover:text-black">
+            Privacy
+          </Link>
           <a href="mailto:hello@vibecodingformanagers.com" className="transition-colors hover:text-black">
             Contact
           </a>
